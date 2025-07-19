@@ -1,0 +1,28 @@
+// let score ="33abc"
+
+// console.log(typeof score);
+// console.log(typeof (score));
+
+// let valueInnumber = String(score)
+// console.log(typeof valueInnumber);
+
+// let isLoggedIn=1
+  
+
+// let booleanLogedIn=Boolean(isLoggedIn)
+// console.log(booleanLogedIn);
+
+// let someNumber = 33
+
+// let stringNumber=String(someNumber)
+// // console.log(stringNumber);
+// // console.log( typeof stringNumber);
+
+// let value = 3
+// let negValue = value
+// // console.log(negValue);
+// log
+ let  str1= 20
+ let str2= 30
+ let str3=str1+str2
+ console.log(str3);
