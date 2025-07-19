@@ -21,6 +21,8 @@ export const createUSer = async(req,res)=>{
 
 export const tom = (req,res)=> res.send("welcom to my page hoe can i help you!")
 
+export const lihoda = (req,res)=> res.send("welcom to my village!");
+
 export const giveDetailes = async (req,res)=>{
   const{email}=req.body;
   const e = await person.find({email})
@@ -46,4 +48,15 @@ export const updateEmail = async (req,res)=>{
   }else{
     res.status(404).send("ther is error");
   }
+}
+
+export const anyOther = async(req,res)=>{
+    const {name,age} = req.body;
+
+    
+    if(!name || name === ""){
+      res.status(400).send({message:"All fields are required!!"})
+    }
+      
+    res.status(200).json({message:"From",name,age});
 }
